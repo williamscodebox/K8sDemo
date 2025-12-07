@@ -59,3 +59,8 @@ index.txt
 devOp.txt
 # pipeline.yaml
 docker.txt
+npm-debug.log
+Dockerfile
+.dockerignore
+.git
+.gitignore
