@@ -16,9 +16,10 @@ spec:
     spec:
       containers:
         - name: k8sdemo-api
-          image: webcodebox/k8sdemo-api:latest
+          image: k8sdemo-api:latest
+          imagePullPolicy: Never
           ports:
-            - containerPort: 3000
+            - containerPort: 4000
           env:
             - name: NODE_ENV
               value: "production"
@@ -36,12 +37,12 @@ spec:
           readinessProbe:
             httpGet:
               path: /readyz
-              port: 3000
+              port: 4000
             initialDelaySeconds: 5
             periodSeconds: 10
           livenessProbe:
             httpGet:
               path: /healthz
-              port: 3000
+              port: 4000
             initialDelaySeconds: 10
             periodSeconds: 20

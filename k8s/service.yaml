@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: devops-kubernetes-api-service
+  name: k8sdemos-api-service
   labels:
-    app: devops-kubernetes-api
+    app: k8sdemo-api
 spec:
   selector:
-    app: devops-kubernetes-api
+    app: k8sdemo-api
   ports:
     - protocol: TCP
-      port: 3000 # Service port
-      targetPort: 3000 # Container port
+      port: 4000 # Service port
+      targetPort: 4000 # Container port
   type: NodePort # change to LoadBalancer if running in cloud
