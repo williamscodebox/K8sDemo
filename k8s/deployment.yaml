@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
         - name: k8sdemo-api
-          image: k8sdemo-api:latest
-          imagePullPolicy: Never
+          image: webcodebox/k8sdemo-api:latest
+          # imagePullPolicy: Never
           ports:
             - containerPort: 4000
           env:

@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: k8sdemos-api-service
+  name: k8sdemo-api-service
   labels:
     app: k8sdemo-api
 spec:
